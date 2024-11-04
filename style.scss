@@ -1,0 +1,83 @@
+$accent-color: #FA9021;
+$font-family: Poppins;
+$main-txt-color: white;
+$bg-color: #1E1E1E;
+$bold: bold;
+
+*
+{
+    font-family: $font-family;
+}
+.container
+{
+    max-width: 1146px;
+}
+header
+{
+    background-color: $bg-color;
+    color: $main-txt-color;
+}
+.logo
+{
+    font-size: 29px;
+    text-transform: uppercase;
+    margin-top: 37px;
+    margin-right: 513.41px;
+    width: 82px;
+    font-weight: $bold;
+}
+.menu
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 52px;
+    padding-left: 0;
+    li 
+    {
+        margin-right: 88px;
+    }
+
+}
+
+.contact
+{
+    background-color: $accent-color;
+    width: 131.7px;
+    height: 41.34px;
+    border-radius: 6px;
+    color: $main-txt-color;
+    margin-top: 44px;
+    padding-right: 0;
+}
+.head
+{
+    max-width: 1146px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec1
+{
+    background-color: $bg-color;
+}
+.game-dev
+{
+    color: $accent-color;
+    font-weight: $bold;
+    font-size: 20px;
+}
+h1
+{
+    font-size: 50px;
+    font-weight: $bold;
+    color: $main-txt-color;
+    width: 479.63px;
+}
+.description1
+{
+    color: $main-txt-color;
+    font-weight: medium;
+    width: 527px;
+}
