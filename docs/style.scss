@@ -1,83 +1,175 @@
 $accent-color: #FA9021;
 $font-family: Poppins;
 $main-txt-color: white;
-$bg-color: #1E1E1E;
+$bg-color: #000000;
 $bold: bold;
+$medium: medium;
+$gradient-color: #4A2800;
 
 *
 {
     font-family: $font-family;
 }
+body
+{
+    margin: 0;
+}
 .container
 {
     max-width: 1146px;
+    margin: 0 auto;
 }
 header
 {
     background-color: $bg-color;
     color: $main-txt-color;
+    padding-top: 37px;
+    padding-bottom: 21.66px;
 }
-.logo
+.header__container
+{
+    margin: 0 64.41px 0 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__menu-case
+{
+    display: flex;
+    flex-direction: row;
+}
+.header__logo
 {
     font-size: 29px;
     text-transform: uppercase;
-    margin-top: 37px;
-    margin-right: 513.41px;
-    width: 82px;
     font-weight: $bold;
 }
-.menu
+.header__menu
 {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    margin-top: 52px;
-    padding-left: 0;
     li 
     {
         margin-right: 88px;
     }
 
 }
-
-.contact
+.header__button
 {
     background-color: $accent-color;
-    width: 131.7px;
-    height: 41.34px;
+    border: none; 
+    padding: 10.08px 28.46px 11.09px 27.41px;
     border-radius: 6px;
     color: $main-txt-color;
-    margin-top: 44px;
-    padding-right: 0;
-}
-.head
-{
-    max-width: 1146px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-size: 13px;
+    height: 41.34px; //ВЫСОТА??????????
 }
 .sec1
 {
-    background-color: $bg-color;
+    background: linear-gradient(black, $gradient-color);
+    padding-bottom: 157px;
 }
 .game-dev
 {
     color: $accent-color;
     font-weight: $bold;
     font-size: 20px;
+    display: inline-block;
 }
 h1
 {
     font-size: 50px;
     font-weight: $bold;
     color: $main-txt-color;
-    width: 479.63px;
+    width: 479.63px; //можно ли ставить ширину?????
+    margin-top: 17px;
+    margin-bottom: 26px;
 }
 .description1
 {
     color: $main-txt-color;
-    font-weight: medium;
-    width: 527px;
+    font-weight: $medium;
+    width: 480px; //ширина???????????????
+    margin-bottom: 50px;
+}
+.sec1__button
+{
+    padding: 15px 30px;
+    background-color: $accent-color;
+    color: $main-txt-color;
+    border-radius: 40px;
+    border: none;
+    margin-bottom: 89px;
+    // width: 195px;
+    // height: 53px;
+    font-size: 16px;
+}
+.sec1__mini
+{
+    display: flex;
+    flex-direction: row;
+}
+.sec1__content
+{
+    padding-top: 96px;
+}
+h2
+{
+    font-size: 31px;
+    color: $main-txt-color;
+    display: inline-block;
+}
+.sec1__button1
+{
+    text-transform: uppercase;
+    color: $main-txt-color;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    height: 57px;
+}
+.sec1__name
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 89px;
+    margin-bottom: 58px;
+}
+.sec1__grid
+{
+    display: grid;
+    gap: 25px 47px;
+    text-align: center;
+    grid-template-columns: repeat(4, 251px);
+    grid-template-rows: 277px 41px;
+    color: $main-txt-color;
+    font-size: 22px;
+    font-weight: $medium;
+    margin-bottom: 129px;
+}
+h3
+{
+    font-size: 35px;
+    font-weight: $bold;
+    color: $main-txt-color;
+    text-align: center;
+    margin-bottom: 67px;
+}
+h4
+{
+    font-size: 30px;
+    font-weight: $bold;
+    color: $main-txt-color;
+    margin-bottom: 32px;
+}
+.sec1__info
+{
+    font-size: 16px;
+    color: $main-txt-color;
+    width: 545px; //??????????????????
+    margin-bottom: 46px;
 }
