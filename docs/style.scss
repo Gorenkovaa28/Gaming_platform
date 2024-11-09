@@ -65,9 +65,12 @@ header
     font-size: 13px;
     height: 41.34px; //ВЫСОТА??????????
 }
-.sec1
+main
 {
     background: linear-gradient(black, $gradient-color);
+}
+.sec1
+{
     padding-bottom: 157px;
 }
 .game-dev
@@ -172,4 +175,41 @@ h4
     color: $main-txt-color;
     width: 545px; //??????????????????
     margin-bottom: 46px;
+}
+.sec2
+{
+    background-image: url("./imgs/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.65); //НЕ РАБОТАЕТ
+    padding-top: 93px;
+    padding-bottom: 92px;
+}
+h5
+{
+    font-size: 30px;
+    font-weight: $bold;
+    color: $main-txt-color;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.sec2__info //НЕ ВЫРАВНИВАЕТСЯ!!!
+{
+    color: $main-txt-color;
+    font-size: 16px;
+    width: 820px; //????????????????????
+    margin-bottom: 99px;
+}
+.sec2__pictures //НЕ ВЫРАВНИВАЕТСЯ!!!!!!!!!!!
+{
+    color: $main-txt-color;
+    font-size: 16px;
+    font-weight: $medium;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1045px;
+    gap: 62px 100px;
+    justify-content: center;
+    text-align: center;
 }
