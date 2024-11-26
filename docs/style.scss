@@ -213,3 +213,119 @@ h5
     justify-content: center;
     text-align: center;
 }
+.sec3
+{
+    padding-top: 141px;
+    text-align: center;
+    padding-bottom: 163px;
+}
+h6
+{
+    color: $main-txt-color;
+    font-size: 30px;
+    font-weight: $bold;
+    margin-bottom: 15px;
+}
+.sec_decr
+{
+    margin-bottom: 71px;
+    color: $main-txt-color;//?????????????????? НЕ РАБОТАЕТ
+    width: 497px;
+
+}
+.imgs
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1170px; //??????????????
+    gap: 33px 27px;
+    margin: 0 auto 72px auto;
+}
+.sec3_seeall
+{
+    width:139px;
+    height:57px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.11);
+    color: $main-txt-color;
+    font-size: 20px;
+    font-weight: $medium;
+    border: none;
+    margin-bottom: 105px;
+}
+.title
+{
+    color: $main-txt-color;
+    font-size: 30px;
+    font-weight: $bold;
+    text-align: start;
+}
+.sec3_txt
+{
+    color:$main-txt-color;
+    width: 545px;
+    text-align: start;
+    margin-bottom: 73px;
+}
+.rect 
+{
+    background-color: #1C140F;
+    border-radius: 15px;
+    padding: 40px 50px 46px 56px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:42.32px;
+}
+.sec3_txt_box
+{
+    color:$main-txt-color;
+    width: 545px;
+    text-align: start;
+}
+.email-form 
+{ 
+    display: flex; 
+    align-items: center; 
+    background-color: #ffff; 
+    border-radius: 8px; 
+    padding: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width:385.68px;
+    height:48px;
+} 
+.email-input 
+{ border: none; 
+    outline: none; 
+    flex: 1; 
+    padding: 10px; 
+    font-size: 16px; 
+    border-radius: 8px; 
+} 
+.continue-button 
+{ 
+    background-color: #DC7000; 
+    color: #ffff; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 8px; 
+}
+footer
+{
+background-color: #070707;
+}
+.footer-container
+{
+    max-width: 1219px;
+    margin: 0 auto;
+    padding-top: 73px;
+}
+.footer__logo
+{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: $bold;
+    color:$main-txt-color; //??????????? НЕ РАБОТАЕТ
+}
