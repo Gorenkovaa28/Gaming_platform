@@ -6,6 +6,11 @@ body {
   margin: 0;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -17,35 +22,32 @@ header {
   padding-top: 37px;
   padding-bottom: 21.66px;
 }
-
-.header__container {
+header .header__container {
   margin: 0 64.41px 0 55px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.header__menu-case {
-  display: flex;
-  flex-direction: row;
-}
-
-.header__logo {
+header .header__container .header__logo {
   font-size: 29px;
   text-transform: uppercase;
   font-weight: bold;
 }
-
-.header__menu {
+header .header__container .header__logo .header__menu-case {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .header__container .header__logo .header__menu-case .header__menu-case__menu {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
-.header__menu li {
+header .header__container .header__logo .header__menu-case .header__menu-case__menu li {
   margin-right: 88px;
 }
-
-.header__button {
+header .header__container .header__logo .header__button {
   background-color: #FA9021;
   border: none;
   border-radius: 6px;
@@ -58,19 +60,23 @@ header {
 main {
   background: linear-gradient(black, #4A2800);
 }
-
-.sec1 {
+main .home-page {
   padding-bottom: 157px;
 }
-
-.game-dev {
+main .home-page .home-page__mini {
+  display: flex;
+  flex-direction: row;
+}
+main .home-page .home-page__mini .home-page__content {
+  padding-top: 96px;
+}
+main .home-page .home-page__mini .home-page__content .home-page__game-dev {
   color: #FA9021;
   font-weight: bold;
   font-size: 20px;
   display: inline-block;
 }
-
-h1 {
+main .home-page .home-page__mini .home-page__content .home-page__game-dev__title {
   font-size: 50px;
   font-weight: bold;
   color: white;
@@ -78,15 +84,13 @@ h1 {
   margin-top: 17px;
   margin-bottom: 26px;
 }
-
-.description1 {
+main .home-page .home-page__mini .home-page__content .home-page__description {
   color: white;
   font-weight: medium;
   max-width: 480px;
   margin-bottom: 50px;
 }
-
-.sec1__button {
+main .home-page .home-page__mini .home-page__content .home-page__details {
   padding: 15px 30px;
   background-color: #FA9021;
   color: white;
@@ -96,23 +100,19 @@ h1 {
   padding: 15px 31px;
   font-size: 16px;
 }
-
-.sec1__mini {
+main .home-page .home-page__games-title {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 89px;
+  margin-bottom: 58px;
 }
-
-.sec1__content {
-  padding-top: 96px;
-}
-
-h2 {
+main .home-page .home-page__games-title .home-page__games-title__title {
   font-size: 31px;
   color: white;
   display: inline-block;
 }
-
-.sec1__button1 {
+main .home-page .home-page__games-title .home-page__games-title__button {
   text-transform: uppercase;
   color: white;
   font-size: 20px;
@@ -122,16 +122,7 @@ h2 {
   padding: 10px 30px;
   height: 57px;
 }
-
-.sec1__name {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 89px;
-  margin-bottom: 58px;
-}
-
-.sec1__grid {
+main .home-page .home-page__posters {
   display: grid;
   gap: 25px 47px;
   text-align: center;
@@ -142,39 +133,33 @@ h2 {
   font-weight: medium;
   margin-bottom: 129px;
 }
-
-h3 {
+main .home-page .home-page__text {
   font-size: 35px;
   font-weight: bold;
   color: white;
   text-align: center;
   margin-bottom: 67px;
 }
-
-h4 {
+main .home-page .home-page__subtitle {
   font-size: 30px;
   font-weight: bold;
   color: white;
   margin-bottom: 32px;
 }
-
-.sec1__info {
+main .home-page .home-page__info {
   font-size: 16px;
   color: white;
   max-width: 545px;
   margin-bottom: 46px;
 }
-
-.sec2 {
+main .activities {
   background-image: url("./imgs/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.65);
   padding-top: 93px;
   padding-bottom: 92px;
 }
-
-h5 {
+main .activities .activities__title {
   font-size: 30px;
   font-weight: bold;
   color: white;
@@ -182,16 +167,14 @@ h5 {
   margin: 0 auto 25px auto;
   max-width: 826px;
 }
-
-.sec2__info {
+main .activities .activities__info {
   color: white;
   font-size: 16px;
   max-width: 820px;
   margin: 0 auto 99px auto;
   text-align: center;
 }
-
-.sec2__pictures {
+main .activities .activities__pictures {
   color: white;
   font-size: 16px;
   font-weight: medium;
@@ -204,35 +187,31 @@ h5 {
   text-align: center;
   margin: 0 auto;
 }
-
-.sec3 {
+main .progects {
   padding-top: 141px;
   text-align: center;
   padding-bottom: 163px;
 }
-
-h6 {
+main .progects .progects__title {
   color: white;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 15px;
 }
-
-.sec3_desc {
-  margin-bottom: 71px;
+main .progects .progects__description {
+  margin: 0 auto 71px;
   color: white;
-  width: 497px;
+  max-width: 497px;
+  font-size: 14px;
 }
-
-.imgs {
+main .progects .progects__imgs {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   gap: 33px 27px;
   margin: 0 auto 72px auto;
 }
-
-.sec3_seeall {
+main .progects .progects__button {
   width: 139px;
   height: 57px;
   border-radius: 10px;
@@ -244,49 +223,48 @@ h6 {
   border: none;
   margin-bottom: 105px;
 }
-
-.title {
+main .progects .progects__title {
   color: white;
   font-size: 30px;
   font-weight: bold;
   text-align: start;
 }
-
-.sec3_txt {
+main .progects .progects__text {
   color: white;
   width: 545px;
   text-align: start;
   margin-bottom: 73px;
 }
-
-.rect {
+main .progects .progects__box {
   background-color: #1C140F;
   border-radius: 15px;
   padding: 40px 50px 46px 56px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 42.32px;
+  justify-content: space-between;
 }
-
-.sec3_txt_box {
+main .progects .progects__box .progects__box__subscribe__title {
   color: white;
-  width: 545px;
+  text-align: start;
+  font-size: 30px;
+  font-weight: medium;
+}
+main .progects .progects__box .progects__box__subscribe__txt {
+  color: white;
+  max-width: 545px;
   text-align: start;
 }
-
-.email-form {
+main .progects .progects__box__email-form {
   display: flex;
   align-items: center;
   background-color: white;
   border-radius: 8px;
   padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 385.68px;
   height: 48px;
 }
-
-.email-input {
+main .progects .progects__box__email-form .progects__box__email-input {
   border: none;
   outline: none;
   flex: 1;
@@ -294,8 +272,7 @@ h6 {
   font-size: 16px;
   border-radius: 8px;
 }
-
-.continue-button {
+main .progects .progects__box__email-form .progects__box__continue-button {
   background-color: #DC7000;
   color: white;
   border: none;
@@ -308,8 +285,7 @@ footer {
   background-color: #070707;
   padding-bottom: 60px;
 }
-
-.footer-container {
+footer .footer__footer-container {
   max-width: 1219px;
   margin: 0 auto;
   padding-top: 73px;
@@ -318,15 +294,13 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
-.footer__logo {
+footer .footer__footer-container .footer__logo {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
 }
-
-.contact {
+footer .footer__footer-container .footer__contact {
   display: flex;
   gap: 16px;
   flex-direction: row;
