@@ -43,24 +43,24 @@ header
             font-size: 29px;
             text-transform: uppercase;
             font-weight: $bold;
-
-            .header__menu-case
+        }
+        .header__menu-case
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .header__menu-case__menu
             {
+                list-style-type: none;
                 display: flex;
                 flex-direction: row;
-                align-items: center;
-                .header__menu-case__menu
+                margin: 0;
+                li 
                 {
-                    list-style-type: none;
-                    display: flex;
-                    flex-direction: row;
-                    margin: 0;
-                    li 
-                    {
-                        margin-right: 88px;
-                    }
+                    margin-right: 88px;
                 }
             }
+        }
             .header__button
             {
                 background-color: $accent-color;
@@ -71,7 +71,11 @@ header
                 padding: 10px 27px;
                 line-height: 20px;
             }
-        }
+            .header__button:hover
+            {
+                background-color: #ab5900;
+            }
+        
     }
 }
 
@@ -87,6 +91,7 @@ main
         {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
 
             .home-page__content
             {
@@ -115,7 +120,7 @@ main
                     max-width: 480px;
                     margin-bottom: 50px;
                 }
-                .home-page__details
+                .home-page__details-button
                 {
                     padding: 15px 30px;
                     background-color: $accent-color;
@@ -125,6 +130,10 @@ main
                     margin-bottom: 89px;
                     padding: 15px 31px;
                     font-size: 16px;
+                }
+                .home-page__details-button:hover
+                {
+                    background-color:#ab5900;
                 }
             }
         }
@@ -152,6 +161,10 @@ main
                 border-radius: 10px;
                 padding: 10px 30px;
                 height: 57px;
+            }
+            .home-page__games-title__button:hover
+            {
+                background-color: rgba(255, 255, 255, 0.35);
             }
         }
         .home-page__posters
@@ -268,7 +281,11 @@ main
             border: none;
             margin-bottom: 105px;
         }
-        .progects__title
+        .progects__button:hover
+        {
+            background-color: rgba(255, 255, 255, 0.35);
+        }
+        .progects__subtitle
         {
             color: $main-txt-color;
             font-size: 30px;
@@ -312,9 +329,8 @@ main
             align-items: center; 
             background-color: #ffff; 
             border-radius: 8px; 
-            padding: 10px; 
-            // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-            width:385.68px;
+            padding: 10px;  
+            width:385.68px; //размер
             height:48px;
         
             .progects__box__email-input 
@@ -334,6 +350,10 @@ main
                 padding: 10px 20px; 
                 font-size: 16px; 
                 border-radius: 8px; 
+            }
+            .progects__box__continue-button:hover
+            {
+                background-color: #ab5900;
             }
         }
     }    
@@ -366,5 +386,296 @@ footer
             gap: 16px;
             flex-direction: row;
         }
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    .container
+    {
+        max-width: 975px;
+    }
+    .home-page__posters
+    {
+        //AAAAAAAAAAAAAAAAAAAAAAA
+    }
+    .home-page__spider-man
+    {
+        width:975px;
+    }
+    .activities__pictures//криво
+    {
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 975px;
+        gap: 50px 65px;
+    }
+    .progects__imgs 
+    {
+        .progects__imgs__img1
+        {
+            width: 300px;
+            height: 180px;
+        }
+        .progects__imgs__img2
+        {
+            width: 280px;
+            height: 180px;
+        }
+        .progects__imgs__img3
+        {
+            width: 200px;
+            height: 180px;
+        }
+        .progects__imgs__img4
+        {
+            width: 330px;
+            height: 180px;
+        }
+        .progects__imgs__img5
+        {
+            width: 350px;
+            height: 180px;
+        }
+    }
+    .progects__box__subscribe__txt //не работает!!!
+    {
+        max-width: 480px;
+    }
+    .progects__box__email-form //не работает!!!
+    {
+        width: 330px;
+    }
+    .footer__footer-container //не работает!!!
+    {
+        max-width: 1006px;
+    }
+}
+@media  screen and (max-width: 992px) 
+{
+    .container
+    {
+        max-width: 806px;
+    }
+    .home-page__game-dev__title //не работает!!!
+    {
+        font-size: 32px;
+    }
+    .home-page__joystick
+    {
+        height: 500px;
+        width: 370px;
+    }   
+    .home-page__posters //по две картинки
+    {
+
+    }
+    .home-page__spider-man
+    {
+        width:805px;
+    }
+    .activities__pictures//криво
+    {
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 805px;
+        gap: 35px 40px;
+    }
+    .progects__imgs 
+    {
+        .progects__imgs__img1
+        {
+            width: 250px;
+            height: 180px;
+        }
+        .progects__imgs__img2
+        {
+            width: 250px;
+            height: 180px;
+        }
+        .progects__imgs__img3
+        {
+            width: 180px;
+            height: 150px;
+        }
+        .progects__imgs__img4
+        {
+            width: 280px;
+            height: 150px;
+        }
+        .progects__imgs__img5
+        {
+            width: 290px;
+            height: 150px;
+        }
+    }
+    .progects__box__subscribe__txt //не работает!!!
+    {
+        max-width: 250px;
+    }
+    .progects__box__email-form //не работает!!!
+    {
+        width: 190px;
+    }
+    .footer__footer-container //не работает!!!
+    {
+        max-width: 838px;
+    }
+}
+@media  screen and (max-width: 768px) 
+{
+    .container
+    {
+        max-width: 624px;
+    }
+    .home-page__game-dev__title //не работает!!!
+    {
+        font-size: 24px;
+    }
+    .home-page__joystick
+    {
+        height: 400px;
+        width: 250px;
+    }   
+    .home-page__posters //по две картинки
+    {
+
+    }
+    .home-page__spider-man
+    {
+        width:624px;
+    }
+    .activities__pictures//криво
+    {
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 624px;
+        gap: 20px 25px;
+    }
+    .progects__imgs 
+    {
+        .progects__imgs__img1
+        {
+            width: 180px;
+            height: 110px;
+        }
+        .progects__imgs__img2
+        {
+            width: 180px;
+            height: 110px;
+        }
+        .progects__imgs__img3
+        {
+            width: 160px;
+            height: 110px;
+        }
+        .progects__imgs__img4
+        {
+            width: 180px;
+            height: 110px;
+        }
+        .progects__imgs__img5
+        {
+            width: 200px;
+            height: 110px;
+        }
+    }
+    .progects__box__subscribe__title //не работает!!!
+    {
+        font-size: 20px;
+    }
+    .progects__box__subscribe__txt //не работает!!!
+    {
+        max-width: 180px;
+    }
+    .progects__box__email-form //не работает!!!
+    {
+        width: 120px;
+    }
+    .footer__footer-container //не работает!!!
+    {
+        max-width: 649px;
+    }
+}
+@media  screen and (max-width: 576px) 
+{
+    .container
+    {
+        max-width: 624px;
+    }
+    .home-page__game-dev__title //не работает!!!
+    {
+        font-size: 24px;
+    }
+    .home-page__joystick
+    {
+        height: 400px;
+        width: 250px;
+    }   
+    .home-page__posters //по две картинки
+    {
+
+    }
+    .home-page__spider-man
+    {
+        width:624px;
+    }
+    .activities__pictures//криво
+    {
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 624px;
+        gap: 20px 25px;
+    }
+    .progects__imgs 
+    {
+        .progects__imgs__img1
+        {
+            width: 180px;
+            height: 110px;
+        }
+        .progects__imgs__img2
+        {
+            width: 180px;
+            height: 110px;
+        }
+        .progects__imgs__img3
+        {
+            width: 160px;
+            height: 110px;
+        }
+        .progects__imgs__img4
+        {
+            width: 180px;
+            height: 110px;
+        }
+        .progects__imgs__img5
+        {
+            width: 200px;
+            height: 110px;
+        }
+    }
+    .progects__box__subscribe__title //не работает!!!
+    {
+        font-size: 20px;
+    }
+    .progects__box__subscribe__txt //не работает!!!
+    {
+        max-width: 180px;
+    }
+    .progects__box__email-form //не работает!!!
+    {
+        width: 120px;
+    }
+    .footer__footer-container //не работает!!!
+    {
+        max-width: 649px;
     }
 }

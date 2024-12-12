@@ -33,21 +33,21 @@ header .header__container .header__logo {
   text-transform: uppercase;
   font-weight: bold;
 }
-header .header__container .header__logo .header__menu-case {
+header .header__container .header__menu-case {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-header .header__container .header__logo .header__menu-case .header__menu-case__menu {
+header .header__container .header__menu-case .header__menu-case__menu {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   margin: 0;
 }
-header .header__container .header__logo .header__menu-case .header__menu-case__menu li {
+header .header__container .header__menu-case .header__menu-case__menu li {
   margin-right: 88px;
 }
-header .header__container .header__logo .header__button {
+header .header__container .header__button {
   background-color: #FA9021;
   border: none;
   border-radius: 6px;
@@ -55,6 +55,9 @@ header .header__container .header__logo .header__button {
   font-size: 13px;
   padding: 10px 27px;
   line-height: 20px;
+}
+header .header__container .header__button:hover {
+  background-color: #ab5900;
 }
 
 main {
@@ -66,6 +69,7 @@ main .home-page {
 main .home-page .home-page__mini {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 main .home-page .home-page__mini .home-page__content {
   padding-top: 96px;
@@ -90,7 +94,7 @@ main .home-page .home-page__mini .home-page__content .home-page__description {
   max-width: 480px;
   margin-bottom: 50px;
 }
-main .home-page .home-page__mini .home-page__content .home-page__details {
+main .home-page .home-page__mini .home-page__content .home-page__details-button {
   padding: 15px 30px;
   background-color: #FA9021;
   color: white;
@@ -99,6 +103,9 @@ main .home-page .home-page__mini .home-page__content .home-page__details {
   margin-bottom: 89px;
   padding: 15px 31px;
   font-size: 16px;
+}
+main .home-page .home-page__mini .home-page__content .home-page__details-button:hover {
+  background-color: #ab5900;
 }
 main .home-page .home-page__games-title {
   display: flex;
@@ -121,6 +128,9 @@ main .home-page .home-page__games-title .home-page__games-title__button {
   border-radius: 10px;
   padding: 10px 30px;
   height: 57px;
+}
+main .home-page .home-page__games-title .home-page__games-title__button:hover {
+  background-color: rgba(255, 255, 255, 0.35);
 }
 main .home-page .home-page__posters {
   display: grid;
@@ -223,7 +233,10 @@ main .progects .progects__button {
   border: none;
   margin-bottom: 105px;
 }
-main .progects .progects__title {
+main .progects .progects__button:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+main .progects .progects__subtitle {
   color: white;
   font-size: 30px;
   font-weight: bold;
@@ -280,6 +293,9 @@ main .progects .progects__box__email-form .progects__box__continue-button {
   font-size: 16px;
   border-radius: 8px;
 }
+main .progects .progects__box__email-form .progects__box__continue-button:hover {
+  background-color: #ab5900;
+}
 
 footer {
   background-color: #070707;
@@ -304,4 +320,212 @@ footer .footer__footer-container .footer__contact {
   display: flex;
   gap: 16px;
   flex-direction: row;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 975px;
+  }
+  .home-page__spider-man {
+    width: 975px;
+  }
+  .activities__pictures {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 975px;
+    gap: 50px 65px;
+  }
+  .progects__imgs .progects__imgs__img1 {
+    width: 300px;
+    height: 180px;
+  }
+  .progects__imgs .progects__imgs__img2 {
+    width: 280px;
+    height: 180px;
+  }
+  .progects__imgs .progects__imgs__img3 {
+    width: 200px;
+    height: 180px;
+  }
+  .progects__imgs .progects__imgs__img4 {
+    width: 330px;
+    height: 180px;
+  }
+  .progects__imgs .progects__imgs__img5 {
+    width: 350px;
+    height: 180px;
+  }
+  .progects__box__subscribe__txt {
+    max-width: 480px;
+  }
+  .progects__box__email-form {
+    width: 330px;
+  }
+  .footer__footer-container {
+    max-width: 1006px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 806px;
+  }
+  .home-page__game-dev__title {
+    font-size: 32px;
+  }
+  .home-page__joystick {
+    height: 500px;
+    width: 370px;
+  }
+  .home-page__spider-man {
+    width: 805px;
+  }
+  .activities__pictures {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 805px;
+    gap: 35px 40px;
+  }
+  .progects__imgs .progects__imgs__img1 {
+    width: 250px;
+    height: 180px;
+  }
+  .progects__imgs .progects__imgs__img2 {
+    width: 250px;
+    height: 180px;
+  }
+  .progects__imgs .progects__imgs__img3 {
+    width: 180px;
+    height: 150px;
+  }
+  .progects__imgs .progects__imgs__img4 {
+    width: 280px;
+    height: 150px;
+  }
+  .progects__imgs .progects__imgs__img5 {
+    width: 290px;
+    height: 150px;
+  }
+  .progects__box__subscribe__txt {
+    max-width: 250px;
+  }
+  .progects__box__email-form {
+    width: 190px;
+  }
+  .footer__footer-container {
+    max-width: 838px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 624px;
+  }
+  .home-page__game-dev__title {
+    font-size: 24px;
+  }
+  .home-page__joystick {
+    height: 400px;
+    width: 250px;
+  }
+  .home-page__spider-man {
+    width: 624px;
+  }
+  .activities__pictures {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 624px;
+    gap: 20px 25px;
+  }
+  .progects__imgs .progects__imgs__img1 {
+    width: 180px;
+    height: 110px;
+  }
+  .progects__imgs .progects__imgs__img2 {
+    width: 180px;
+    height: 110px;
+  }
+  .progects__imgs .progects__imgs__img3 {
+    width: 160px;
+    height: 110px;
+  }
+  .progects__imgs .progects__imgs__img4 {
+    width: 180px;
+    height: 110px;
+  }
+  .progects__imgs .progects__imgs__img5 {
+    width: 200px;
+    height: 110px;
+  }
+  .progects__box__subscribe__title {
+    font-size: 20px;
+  }
+  .progects__box__subscribe__txt {
+    max-width: 180px;
+  }
+  .progects__box__email-form {
+    width: 120px;
+  }
+  .footer__footer-container {
+    max-width: 649px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 624px;
+  }
+  .home-page__game-dev__title {
+    font-size: 24px;
+  }
+  .home-page__joystick {
+    height: 400px;
+    width: 250px;
+  }
+  .home-page__spider-man {
+    width: 624px;
+  }
+  .activities__pictures {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 624px;
+    gap: 20px 25px;
+  }
+  .progects__imgs .progects__imgs__img1 {
+    width: 180px;
+    height: 110px;
+  }
+  .progects__imgs .progects__imgs__img2 {
+    width: 180px;
+    height: 110px;
+  }
+  .progects__imgs .progects__imgs__img3 {
+    width: 160px;
+    height: 110px;
+  }
+  .progects__imgs .progects__imgs__img4 {
+    width: 180px;
+    height: 110px;
+  }
+  .progects__imgs .progects__imgs__img5 {
+    width: 200px;
+    height: 110px;
+  }
+  .progects__box__subscribe__title {
+    font-size: 20px;
+  }
+  .progects__box__subscribe__txt {
+    max-width: 180px;
+  }
+  .progects__box__email-form {
+    width: 120px;
+  }
+  .footer__footer-container {
+    max-width: 649px;
+  }
 }/*# sourceMappingURL=style.css.map */
