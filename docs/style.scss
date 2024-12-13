@@ -170,10 +170,9 @@ main
         .home-page__posters
         {
             display: grid;
-            gap: 25px 47px;
+            gap: 43px;
             text-align: center;
             grid-template-columns: repeat(4, 251px);
-            grid-template-rows: 277px 41px;
             color: $main-txt-color;
             font-size: 22px;
             font-weight: $medium;
@@ -394,63 +393,87 @@ footer
     {
         max-width: 975px;
     }
-    .home-page__posters
+    main
     {
-        //AAAAAAAAAAAAAAAAAAAAAAA
-    }
-    .home-page__spider-man
-    {
-        width:975px;
-    }
-    .activities__pictures//криво
-    {
-        font-size: 16px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 975px;
-        gap: 50px 65px;
-    }
-    .progects__imgs 
-    {
-        .progects__imgs__img1
+        .home-page
         {
-            width: 300px;
-            height: 180px;
+            .home-page__posters
+            {
+                grid-template-columns: repeat(4, 200px);
+                gap:43px;
+                justify-content: center;
+                .home-page__posters__post
+                {
+                    .image
+                    {
+                        width:200px;
+                    }
+                }
+            }
+            .home-page__spider-man
+            {
+                width:975px;
+            }
         }
-        .progects__imgs__img2
+        .activities
         {
-            width: 280px;
-            height: 180px;
+            .activities__pictures
+            {
+                width: 975px;
+                gap: 50px 65px;
+            }
         }
-        .progects__imgs__img3
+        .progects
         {
-            width: 200px;
-            height: 180px;
-        }
-        .progects__imgs__img4
-        {
-            width: 330px;
-            height: 180px;
-        }
-        .progects__imgs__img5
-        {
-            width: 350px;
-            height: 180px;
+            .progects__imgs 
+            {
+                .progects__imgs__img1
+                {
+                    width: 300px;
+                    height: 180px;
+                }
+                .progects__imgs__img2
+                {
+                    width: 280px;
+                    height: 180px;
+                }
+                .progects__imgs__img3
+                {
+                    width: 200px;
+                    height: 180px;
+                }
+                .progects__imgs__img4
+                {
+                    width: 330px;
+                    height: 180px;
+                }
+                .progects__imgs__img5
+                {
+                    width: 350px;
+                    height: 180px;
+                }
+            }
+            .progects__box
+            {
+                .progects__box__subscribe__txt
+                {
+                    max-width: 450px;
+                }
+            }
+            .progects__box__email-form 
+            {
+                width: 330px;
+            }
         }
     }
-    .progects__box__subscribe__txt //не работает!!!
+    footer 
     {
-        max-width: 480px;
+        .footer__footer-container
+        {
+            max-width: 1006px;
+        }
     }
-    .progects__box__email-form //не работает!!!
-    {
-        width: 330px;
-    }
-    .footer__footer-container //не работает!!!
-    {
-        max-width: 1006px;
-    }
+   
 }
 @media  screen and (max-width: 992px) 
 {
@@ -458,71 +481,108 @@ footer
     {
         max-width: 806px;
     }
-    .home-page__game-dev__title //не работает!!!
+    main
     {
-        font-size: 32px;
-    }
-    .home-page__joystick
-    {
-        height: 500px;
-        width: 370px;
-    }   
-    .home-page__posters //по две картинки
-    {
-
-    }
-    .home-page__spider-man
-    {
-        width:805px;
-    }
-    .activities__pictures//криво
-    {
-        font-size: 16px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 805px;
-        gap: 35px 40px;
-    }
-    .progects__imgs 
-    {
-        .progects__imgs__img1
+        .home-page
         {
-            width: 250px;
-            height: 180px;
+            .home-page__mini
+            {
+                .home-page__content
+                {
+                    .home-page__game-dev__title
+                    {
+                        font-size: 36px;
+                    }
+                }
+            }
+            .home-page__joystick
+            {
+                width:455px;
+                height: 570px;
+            }
+            .home-page__posters
+            {
+                grid-template-columns: repeat(4, 165px);
+                gap:35px;
+                justify-content: center;
+                .home-page__posters__post
+                {
+                    .image
+                    {
+                        width:165px;
+                    }
+                    .home-page__grid__status
+                    {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .home-page__spider-man
+            {
+                width:806px;
+            }
         }
-        .progects__imgs__img2
+        .activities
         {
-            width: 250px;
-            height: 180px;
+            .activities__pictures
+            {
+                width: 806px;
+                gap: 41px 54px;
+            }
         }
-        .progects__imgs__img3
+        .progects
         {
-            width: 180px;
-            height: 150px;
-        }
-        .progects__imgs__img4
-        {
-            width: 280px;
-            height: 150px;
-        }
-        .progects__imgs__img5
-        {
-            width: 290px;
-            height: 150px;
+            .progects__imgs 
+            {
+                .progects__imgs__img1
+                {
+                    width: 248px;
+                    height: 149px;
+                }
+                .progects__imgs__img2
+                {
+                    width: 231px;
+                    height: 149px;
+                }
+                .progects__imgs__img3
+                {
+                    width: 165px;
+                    height: 149px;
+                }
+                .progects__imgs__img4
+                {
+                    width: 273px;
+                    height: 149px;
+                }
+                .progects__imgs__img5
+                {
+                    width: 289px;
+                    height: 149px;
+                }
+            }
+            .progects__box
+            {
+                .progects__box__subscribe__txt
+                {
+                    max-width: 300px;
+                }
+                .progects__box__subscribe__title
+                {
+                    font-size: 24px;
+                }
+            }
+            .progects__box__email-form 
+            {
+                width: 330px;
+            }
         }
     }
-    .progects__box__subscribe__txt //не работает!!!
+    footer 
     {
-        max-width: 250px;
-    }
-    .progects__box__email-form //не работает!!!
-    {
-        width: 190px;
-    }
-    .footer__footer-container //не работает!!!
-    {
-        max-width: 838px;
+        .footer__footer-container
+        {
+            max-width: 832px;
+        }
     }
 }
 @media  screen and (max-width: 768px) 
@@ -531,151 +591,624 @@ footer
     {
         max-width: 624px;
     }
-    .home-page__game-dev__title //не работает!!!
+    header
     {
-        font-size: 24px;
-    }
-    .home-page__joystick
-    {
-        height: 400px;
-        width: 250px;
-    }   
-    .home-page__posters //по две картинки
-    {
-
-    }
-    .home-page__spider-man
-    {
-        width:624px;
-    }
-    .activities__pictures//криво
-    {
-        font-size: 16px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 624px;
-        gap: 20px 25px;
-    }
-    .progects__imgs 
-    {
-        .progects__imgs__img1
+        .header__container
         {
-            width: 180px;
-            height: 110px;
-        }
-        .progects__imgs__img2
-        {
-            width: 180px;
-            height: 110px;
-        }
-        .progects__imgs__img3
-        {
-            width: 160px;
-            height: 110px;
-        }
-        .progects__imgs__img4
-        {
-            width: 180px;
-            height: 110px;
-        }
-        .progects__imgs__img5
-        {
-            width: 200px;
-            height: 110px;
+            .header__menu-case
+            {
+                .header__menu-case__menu
+                {
+                    font-size: 14px;
+                    li
+                    {
+                        margin-right: 50px;
+                    }
+                }
+            }
         }
     }
-    .progects__box__subscribe__title //не работает!!!
+    main
     {
-        font-size: 20px;
+        .home-page
+        {
+            .home-page__mini
+            {
+                .home-page__content
+                {
+                    .home-page__game-dev__title
+                    {
+                        font-size: 28px;
+                    }
+                }
+            }
+            .home-page__joystick
+            {
+                width: 352px;
+                height: 400px;
+            }
+            .home-page__posters
+            {
+                grid-template-columns: repeat(2, 180px);
+                grid-template-rows: repeat(2, 226px);
+                gap:30px 35px;
+                justify-content: center;
+                .home-page__posters__post
+                {
+                    .image
+                    {
+                        width:180px;
+                    }
+                    .home-page__grid__status
+                    {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .home-page__spider-man
+            {
+                width: 624px;
+            }
+        }
+        .activities
+        {
+            .activities__pictures
+            {
+                width: 624px;
+                gap: 32px 28px;
+                div
+                {
+                    width: 124px;
+                }
+            }
+        }
+        .progects
+        {
+            .progects__imgs 
+            {
+                .progects__imgs__img1
+                {
+                    width: 192px;
+                    height: 115px;
+                }
+                .progects__imgs__img2
+                {
+                    width: 179px;
+                    height: 115px;
+                }
+                .progects__imgs__img3
+                {
+                    width: 128px;
+                    height: 115px;
+                }
+                .progects__imgs__img4
+                {
+                    width: 211px;
+                    height: 115px;
+                }
+                .progects__imgs__img5
+                {
+                    width: 224px;
+                    height: 115px;
+                }
+            }
+            .progects__subtitle
+            {
+                text-align: center;
+            }
+            .progects__text
+            {
+                text-align: center;
+            }
+            .progects__box
+            {
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                max-width: 450px;
+                justify-content: center;
+                gap: 30px;
+                margin: 0 auto;
+                .progects__box__subscribe__txt
+                {
+                    max-width: 450px;
+                    text-align: center;
+                }
+                .progects__box__subscribe__title
+                {
+                    text-align: center;
+                }
+                .progects__box__subscribe__title
+                {
+                    font-size: 20px;
+                }
+            }
+            .progects__box__email-form 
+            {
+                width: 330px;
+            }
+        }
     }
-    .progects__box__subscribe__txt //не работает!!!
+    footer 
     {
-        max-width: 180px;
-    }
-    .progects__box__email-form //не работает!!!
-    {
-        width: 120px;
-    }
-    .footer__footer-container //не работает!!!
-    {
-        max-width: 649px;
+        .footer__footer-container
+        {
+            max-width: 644px;
+        }
     }
 }
 @media  screen and (max-width: 576px) 
 {
     .container
     {
-        max-width: 624px;
+        max-width: 468px;
     }
-    .home-page__game-dev__title //не работает!!!
+    header
     {
-        font-size: 24px;
-    }
-    .home-page__joystick
-    {
-        height: 400px;
-        width: 250px;
-    }   
-    .home-page__posters //по две картинки
-    {
-
-    }
-    .home-page__spider-man
-    {
-        width:624px;
-    }
-    .activities__pictures//криво
-    {
-        font-size: 16px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 624px;
-        gap: 20px 25px;
-    }
-    .progects__imgs 
-    {
-        .progects__imgs__img1
+        .header__container
         {
-            width: 180px;
-            height: 110px;
-        }
-        .progects__imgs__img2
-        {
-            width: 180px;
-            height: 110px;
-        }
-        .progects__imgs__img3
-        {
-            width: 160px;
-            height: 110px;
-        }
-        .progects__imgs__img4
-        {
-            width: 180px;
-            height: 110px;
-        }
-        .progects__imgs__img5
-        {
-            width: 200px;
-            height: 110px;
+            .header__menu-case
+            {
+                display: none;
+                
+            }
         }
     }
-    .progects__box__subscribe__title //не работает!!!
+    main
     {
-        font-size: 20px;
+        .home-page
+        {
+            .home-page__mini
+            {
+                .home-page__content
+                {
+                    padding-top:15px;
+                    .home-page__game-dev
+                    {
+                        font-size:16px
+                    }
+                    .home-page__game-dev__title
+                    {
+                        font-size: 18px;
+                    }
+                    .home-page__description
+                    {
+                        font-size: 10px;
+                        margin-bottom: 25px;
+                    }
+                    .home-page__details-button
+                    {
+                        font-size: 10px;
+                    }
+                }
+            }
+            .home-page__joystick
+            {
+                padding-top: 10px;
+                width: 240px;
+                height: 280px;
+            }
+            .home-page__games-title
+            {
+                margin-top: 30px;
+                .home-page__games-title__title
+                {
+                    font-size: 18px;
+                }
+                .home-page__games-title__button
+                {
+                    font-size: 16px;
+                }
+            }
+            .home-page__posters
+            {
+                grid-template-columns: repeat(2, 180px);
+                grid-template-rows: repeat(2, 226px);
+                gap:30px 35px;
+                justify-content: center;
+                .home-page__posters__post
+                {
+                    .image
+                    {
+                        width:180px;
+                    }
+                    .home-page__grid__status
+                    {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .home-page__text
+            {
+                font-size: 24px;
+                margin-bottom: 35px;
+            }
+            .home-page__subtitle
+            {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            .home-page__info
+            {
+                font-size: 14px;
+            }
+            .home-page__spider-man
+            {
+                width: 468px;
+                margin-bottom: 20px;
+            }
+            padding: 30px
+        }
+        .activities
+        {
+            .activities__title
+            {
+                font-size: 24px;
+            }
+            .activities__info
+            {
+                font-size: 14px;
+                margin-bottom: 40px;
+            }
+            .activities__pictures
+            {
+                max-width: 400px;
+                gap: 24px 30px;
+                div
+                {
+                    width: 100px;
+                }
+                p
+                {
+                    font-size: 14px;
+                }
+            }
+        }
+        .progects
+        {
+            padding-top: 70px;
+            padding-bottom: 100px;
+            .progects__title
+            {
+                margin-top: 0;
+            }
+            .progects__description
+            {
+                margin-bottom: 30px;
+            }
+            .progects__imgs 
+            {
+                margin: 0 auto 30px;
+                justify-content: center;
+                .progects__imgs__img1
+                {
+                    width: 200px;
+                    height: 150px;
+                }
+                .progects__imgs__img2
+                {
+                    width: 250px;
+                    height: 150px;
+                }
+                .progects__imgs__img3
+                {
+                    width: 150px;
+                    height: 150px;
+                }
+                .progects__imgs__img4
+                {
+                    width: 220px;
+                    height: 150px;
+                }
+                .progects__imgs__img5
+                {
+                    width: 180px;
+                    height: 150px;
+                }
+            }
+            .progects__button
+            {
+                margin-bottom: 50px;
+            }
+            .progects__subtitle
+            {
+                text-align: center;
+            }
+            .progects__text
+            {
+                text-align: center;
+                max-width: 450px;
+            }
+            .progects__box
+            {
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                max-width: 338px;
+                justify-content: center;
+                gap: 23px;
+                margin: 0 auto;
+                .progects__box__subscribe__txt
+                {
+                    max-width: 338px;
+                    text-align: center;
+                }
+                .progects__box__subscribe__title
+                {
+                    text-align: center;
+                }
+                .progects__box__subscribe__title
+                {
+                    font-size: 20px;
+                }
+            }
+            .progects__box__email-form 
+            {
+                width: 330px;
+            }
+        }
     }
-    .progects__box__subscribe__txt //не работает!!!
+    footer 
     {
-        max-width: 180px;
+        .footer__footer-container
+        {
+            max-width: 483px;
+            .footer__contact
+            {
+                gap: 5px;
+            }
+        }
     }
-    .progects__box__email-form //не работает!!!
+}
+@media  screen and (max-width: 320px) 
+{
+    .container
     {
-        width: 120px;
+        max-width: 260px;
     }
-    .footer__footer-container //не работает!!!
+    header
     {
-        max-width: 649px;
+        .header__container
+        {
+            .header__logo
+            {
+                font-size: 20px;
+            }
+            .header__menu-case
+            {
+                display: none;
+            }
+        }
+    }
+    main
+    {
+        .home-page
+        {
+            .home-page__mini
+            {
+                .home-page__content
+                {
+                    padding-top:15px;
+                    text-align: center;
+                    .home-page__game-dev
+                    {
+                        font-size:16px;
+                        margin: 0 auto;
+                    }
+                    .home-page__game-dev__title
+                    {
+                        font-size: 18px;
+                    }
+                    .home-page__description
+                    {
+                        font-size: 10px;
+                        margin-bottom: 25px;
+                    }
+                    .home-page__details-button
+                    {
+                        font-size: 10px;
+                        padding: 15px;
+                    }
+                }
+            }
+            .home-page__joystick
+            {
+                display: none;
+            }
+            .home-page__games-title
+            {
+                margin-top: 15px;
+                .home-page__games-title__title
+                {
+                    font-size: 14px;
+                }
+                .home-page__games-title__button
+                {
+                    font-size: 10px;
+                    padding: 10px 20px;
+                }
+            }
+            .home-page__posters
+            {
+                grid-template-columns: none;
+                grid-template-rows: repeat(4, 240px);
+                gap:30px;
+                justify-content: center;
+                margin-bottom: 50px;
+                .home-page__posters__post
+                {
+                    .image
+                    {
+                        width:180px;
+                    }
+                    .home-page__grid__status
+                    {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .home-page__text
+            {
+                font-size: 24px;
+                margin-bottom: 35px;
+                text-align: center;
+            }
+            .home-page__subtitle
+            {
+                font-size: 18px;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            .home-page__info
+            {
+                font-size: 14px;
+                text-align: center;
+            }
+            .home-page__spider-man
+            {
+                width: 260px;
+                margin-bottom: 20px;
+            }
+            padding: 30px
+        }
+        .activities
+        {
+            .activities__title
+            {
+                font-size: 24px;
+            }
+            .activities__info
+            {
+                font-size: 14px;
+                margin-bottom: 40px;
+            }
+            .activities__pictures
+            {
+                max-width: 222px;
+                gap: 24px 5px;
+                div
+                {
+                    width: 130px;
+                }
+                p
+                {
+                    font-size: 14px;
+                }
+            }
+        }
+        .progects
+        {
+            padding-top: 70px;
+            padding-bottom: 100px;
+            .progects__title
+            {
+                margin-top: 0;
+            }
+            .progects__description
+            {
+                margin-bottom: 30px;
+            }
+            .progects__imgs 
+            {
+                margin: 0 auto 30px;
+                justify-content: center;
+                gap:10px;
+                .progects__imgs__img1
+                {
+                    width: 200px;
+                    height: 150px;
+                }
+                .progects__imgs__img2
+                {
+                    width: 200px;
+                    height: 150px;
+                }
+                .progects__imgs__img3
+                {
+                    width: 200px;
+                    height: 200px;
+                }
+                .progects__imgs__img4
+                {
+                    width: 200px;
+                    height: 150px;
+                }
+                .progects__imgs__img5
+                {
+                    width: 200px;
+                    height: 150px;
+                }
+            }
+            .progects__button
+            {
+                margin-bottom: 50px;
+            }
+            .progects__subtitle
+            {
+                text-align: center;
+            }
+            .progects__text
+            {
+                text-align: center;
+                max-width: 250px;
+            }
+            .progects__box
+            {
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                max-width: 188px;
+                justify-content: center;
+                gap: 23px;
+                margin: 0 auto;
+                .progects__box__subscribe__txt
+                {
+                    max-width: 100%;
+                    text-align: center;
+                }
+                .progects__box__subscribe__title
+                {
+                    text-align: center;
+                    max-width: 100%;
+                }
+                .progects__box__subscribe__title
+                {
+                    font-size: 20px;
+                }
+            }
+            .progects__box__email-form 
+            {
+                width: 183px;
+                height: 130px;
+                display:flex;
+                flex-direction: column;
+            }
+            .progects__box__email-input
+            {
+                width:183px
+            }
+        }
+    }
+    footer 
+    {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        .footer__footer-container
+        {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0;
+            .footer__logo
+            {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            max-width: 268px;
+            .footer__contact
+            {
+                gap: 5px;
+            }
+        }
     }
 }
