@@ -59,7 +59,16 @@ header
                 {
                     margin-right: 88px;
                 }
+                li:hover
+                {
+                    font-size: 20px;
+                }
             }
+            .header__menu-case__burger
+            {
+                display: none;
+            }
+            
         }
             .header__button
             {
@@ -238,6 +247,11 @@ main
             justify-content: center;
             text-align: center;
             margin: 0 auto;
+            .arrow:hover
+            {
+                height: 25px;
+                width:25px;
+            }
         }
     }
     .progects
@@ -384,6 +398,11 @@ footer
             display:flex;
             gap: 16px;
             flex-direction: row;
+            .icon:hover
+            {
+                height: 70px;
+                width: 70px;
+            }
         }
     }
 }
@@ -393,6 +412,7 @@ footer
     {
         max-width: 975px;
     }
+    
     main
     {
         .home-page
@@ -743,14 +763,25 @@ footer
     {
         max-width: 468px;
     }
-    header
+    .header
     {
         .header__container
         {
             .header__menu-case
             {
-                display: none;
-                
+                .header__menu-case__menu
+                {
+                    display: none;
+                }
+                .header__menu-case__burger
+                {
+                    display:flex;
+                    justify-content: end;
+                }
+                .header__button
+                {
+                    display: none;
+                }
             }
         }
     }
@@ -966,17 +997,25 @@ footer
     {
         max-width: 260px;
     }
-    header
+    .header
     {
         .header__container
         {
-            .header__logo
-            {
-                font-size: 20px;
-            }
             .header__menu-case
             {
-                display: none;
+                .header__menu-case__menu
+                {
+                    display: none;
+                }
+                .header__menu-case__burger
+                {
+                    display:flex;
+                    justify-content: end;
+                }
+                .header__button
+                {
+                    display: none;
+                }
             }
         }
     }
